@@ -4,6 +4,8 @@ import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.Token;
 
+import java.io.FileWriter;
+
 import java.io.IOException;
 
 public class Principal {
@@ -14,9 +16,15 @@ public class Principal {
             CharStream cs = CharStreams.fromFileName(args[0]);
             LALexer lex = new LALexer(cs);
             Token t = null;
+
+
+            String filename = "output.txt";
+            FileWriter writer = new FileWriter(filename, true);
             while ((t = lex.nextToken()).getType() != Token.EOF) {
-                System.out.println("<" + LALexer.VOCABULARY.getDisplayName(t.getType()) + "," + t.getText() + ">");
+                writer.write("<" + LALexer.VOCABULARY.getDisplayName(t.getType()) + "," + t.getText() + ">\n");
+
             }
+            writer.close();
         } catch (IOException ex) {
         }
     }

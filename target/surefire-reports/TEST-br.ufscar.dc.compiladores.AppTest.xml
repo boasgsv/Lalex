@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.ufscar.dc.compiladores.AppTest" time="0.022" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.ufscar.dc.compiladores.AppTest" time="0.026" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-20-openjdk/lib"/>
-    <property name="sun.java.command" value="/home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/surefire/surefirebooter10558124912675122829.jar /home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/surefire 2023-05-19T07-15-03_668-jvmRun1 surefire15326729237708861152tmp surefire_016201801519203223440tmp"/>
+    <property name="sun.java.command" value="/home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/surefire/surefirebooter6346648806640889151.jar /home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/surefire 2023-05-19T07-44-35_825-jvmRun1 surefire6668437297276152353tmp surefire_010850401942493270333tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/test-classes:/home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/classes:/home/gsvboas/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/gsvboas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/gsvboas/.m2/repository/org/antlr/antlr4/4.12.0/antlr4-4.12.0-complete.jar:/home/gsvboas/.m2/repository/org/antlr/antlr4-runtime/4.12.0/antlr4-runtime-4.12.0.jar:/home/gsvboas/.m2/repository/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3.jar:/home/gsvboas/.m2/repository/org/antlr/ST4/4.3.4/ST4-4.3.4.jar:/home/gsvboas/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar:/home/gsvboas/.m2/repository/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/surefire/surefirebooter10558124912675122829.jar"/>
+    <property name="surefire.real.class.path" value="/home/gsvboas/uni/ufscar/disciplinas/2023_1/compiladores/lalex/target/surefire/surefirebooter6346648806640889151.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.1+9"/>
     <property name="user.name" value="gsvboas"/>
@@ -53,5 +53,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="br.ufscar.dc.compiladores.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="br.ufscar.dc.compiladores.AppTest" time="0.003"/>
 </testsuite>
