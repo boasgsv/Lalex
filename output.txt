@@ -1,17 +1,2 @@
-<'algoritmo','algoritmo'>
-<'declare','declare'>
-<'nome',IDENT>
-<'literal','literal'>
-<'declare','declare'>
-<'idade',IDENT>
-<'inteiro',IDENT>
-<'leia','leia'>
-<'nome',IDENT>
-<'leia','leia'>
-<'idade',IDENT>
-<'escreva','escreva'>
-<'nome',IDENT>
-<'tem',IDENT>
-<'idade',IDENT>
-<'anos',IDENT>
-<'fim_algoritmo','fim_algoritmo'>
+Linha 1: 
+

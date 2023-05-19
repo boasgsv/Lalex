@@ -23,7 +23,11 @@ public class Principal {
             FileWriter writer = new FileWriter(filename);
             while ((t = lex.nextToken()).getType() != Token.EOF) {
                 String displayName = LALexer.VOCABULARY.getDisplayName(t.getType());
-                if (displayName != "PALAVRAS_CHAVES")
+                if (displayName.equals("ERRO")){
+                    writer.write("Linha " + t.getLine() + ": " + t.getText() + "\n");
+                    break;
+                }
+                else if (displayName != "PALAVRAS_CHAVES")
                     writer.write("<'" + t.getText() + "'," + displayName + ">\n");
                 else
                     writer.write("<'" + t.getText() + "','" + t.getText() + "'>\n");
