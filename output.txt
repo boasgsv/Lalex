@@ -1,1 +1,2 @@
-<PALAVRAS_CHAVE,algoritmo><PALAVRAS_CHAVE,fim_algoritmo>
+<PALAVRAS_CHAVE,algoritmo>
+<PALAVRAS_CHAVE,fim_algoritmo>

@@ -19,7 +19,7 @@ public class Principal {
 
 
             String filename = "output.txt";
-            FileWriter writer = new FileWriter(filename, true);
+            FileWriter writer = new FileWriter(filename);
             while ((t = lex.nextToken()).getType() != Token.EOF) {
                 writer.write("<" + LALexer.VOCABULARY.getDisplayName(t.getType()) + "," + t.getText() + ">\n");
 
