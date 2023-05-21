@@ -18,8 +18,7 @@ public class Principal {
             LALexer lex = new LALexer(cs);
             Token t = null;
 
-
-            String filename = "output.txt";
+            String filename = args[1];
             FileWriter writer = new FileWriter(filename);
             while ((t = lex.nextToken()).getType() != Token.EOF) {
                 String displayName = LALexer.VOCABULARY.getDisplayName(t.getType());
