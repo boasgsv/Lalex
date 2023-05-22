@@ -14,7 +14,7 @@ TEXTO: (LETRA | DIGITO | CARACTERE_ESPECIAL)*;
 
 CADEIA: '"' .*? '"';
 
-COMENTARIO: '{ ' .*? '}' { skip(); };
+COMENTARIO: '{ ' ~('\n'|'}')* '}' { skip(); };
 
 PALAVRAS_CHAVES: 'algoritmo' | 'fim_algoritmo' | 'declare' | 'tipo' 
                     | 'leia' | 'escreva' 
@@ -39,3 +39,5 @@ PALAVRAS_CHAVES: 'algoritmo' | 'fim_algoritmo' | 'declare' | 'tipo'
 IDENT: LETRA (LETRA | DIGITO | '_')*;
 NUM_INT: ('0'..'9')+;
 NUM_REAL: ('0'..'9')+ ('.' ('0'..'9')+)?;
+
+COMENTARIO_NAO_FECHADO: '{' ~('\n'|'}')* '\n';
