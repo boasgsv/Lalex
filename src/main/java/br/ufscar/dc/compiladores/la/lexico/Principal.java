@@ -23,7 +23,7 @@ public class Principal {
             while ((t = lex.nextToken()).getType() != Token.EOF) {
                 String displayName = LALexer.VOCABULARY.getDisplayName(t.getType());
                 if (displayName.equals("ERRO")){
-                    writer.write("Linha " + t.getLine() + ": " + t.getText() + "\n");
+                    writer.write("Linha " + t.getLine() + ": " + t.getText() + " - simbolo nao identificado\n");
                     break;
                 }
                 else if (displayName.equals("COMENTARIO_NAO_FECHADO")){
@@ -34,8 +34,6 @@ public class Principal {
                     writer.write("<'" + t.getText() + "'," + displayName + ">\n");
                 else
                     writer.write("<'" + t.getText() + "','" + t.getText() + "'>\n");
-    
-
             }
             writer.close();
         } catch (IOException ex) {
