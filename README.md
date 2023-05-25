@@ -10,6 +10,8 @@ Maven
 É necessário compilar o projeto via Maven
 
     mvn clean package
+    
+## Rodar
 
 Para rodar a suite de testes inteira
     
