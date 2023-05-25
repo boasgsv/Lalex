@@ -1,16 +1,16 @@
 #! /bin/bash
 
-for i in {1..3}
-do
-    ${test_name} = "${i}"
-    ${full_path} = "test_cases/saida${test_name}"
 
-    if [ -x "${full_path}"]
+
+for i in {1..37}; do
+    java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar test-cases/entrada/${i}.ct test-cases/saida/${i}.out
+    diff test-cases/saida/${i}.ct test-cases/saida/${i}.out > test-cases/saida/${i}.diff
+    if [ $? -eq 0 ]
     then
-        echo "Running ${test_name}"
-        "java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar test-cases/entrada/${i}"
-        "diff outputs/${i} test-cases/saida/${i}"   
+        rm -f test-cases/saida/${i}.diff
+        echo "Test ${i} passed!"
     else
-        echo "test ${i} not found or not executable"
+        echo "Test ${i} failed!"
     fi
+
 done
