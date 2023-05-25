@@ -12,7 +12,13 @@ CARACTERE_ESPECIAL: ' ' | '(' | ')';
 fragment
 TEXTO: (LETRA | DIGITO | CARACTERE_ESPECIAL)*;
 
-CADEIA: '"' .*? '"';
+CADEIA: '"' ~('\n'|'"')* '"';
+
+NOVA_LINHA: '\n' { skip(); };
+
+ESPACO_EM_BRANCO: ' ' { skip(); };
+
+TAB: '\t' { skip(); };
 
 COMENTARIO: '{ ' ~('\n'|'}')* '}' { skip(); };
 
@@ -41,5 +47,6 @@ NUM_INT: ('0'..'9')+;
 NUM_REAL: ('0'..'9')+ ('.' ('0'..'9')+)?;
 
 COMENTARIO_NAO_FECHADO: '{' ~('\n'|'}')* '\n';
+CADEIA_NAO_FECHADA: '"' ~('\n'|'"')* '\n';
 
 ERRO: '~' | '$' | '}';

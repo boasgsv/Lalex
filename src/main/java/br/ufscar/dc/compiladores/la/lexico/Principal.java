@@ -30,6 +30,10 @@ public class Principal {
                     writer.write("Linha " + t.getLine() + ": comentario nao fechado\n");
                     break;
                 }
+                else if (displayName.equals("CADEIA_NAO_FECHADA")){
+                    writer.write("Linha " + t.getLine() + ": cadeia literal nao fechada\n");
+                    break;
+                }
                 else if (displayName != "PALAVRAS_CHAVES")
                     writer.write("<'" + t.getText() + "'," + displayName + ">\n");
                 else
