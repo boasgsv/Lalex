@@ -1,3 +1,7 @@
+Gabriele Souza Vilas Bôas           745738
+Geovanne Mansano Fritch da Silva    791072
+Pedro Gonçalves dos Santos          794042
+
 # Analisador léxico para a Linguagem LA
 
 ## Pré-requisitos
